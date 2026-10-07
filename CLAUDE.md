@@ -7,7 +7,7 @@ Tiene Grado Medio de Informática: no explicar qué es HTML/CSS, pero sí explic
 ## Stack y estructura
 HTML + CSS + JS mínimo. Sin frameworks. Un único `css/style.css`. Se prueba con Live Server.
 
-    index.html · venta.html · apadrinacion.html   (raíz)
+    index · venta · apadrinacion · historias · servicios · contacto  (.html, en la raíz)
     css/style.css
     imagenes/                                      (fondo-campo.jpg, fotos de caballos)
 
@@ -40,7 +40,6 @@ Jarana, Caramelo, Ultimatum, Johnny, Dimond, Gabriela, Neu, Romi). Sin campos r�
 con "Leer más / Leer menos" que se despliega en la propia tarjeta con animación suave.
 
 ## Estado
-[x] index  [x] venta  [x] apadrinacion  (diseño base; fotos y textos provisionales)
-[ ] historias.html (storytelling tipo blog)  [ ] servicios.html  [ ] contacto.html (ubicación, teléfono, email, redes, mapa, formulario)
-[ ] menú hamburguesa móvil  [ ] SEO  [ ] optimización  [ ] dominio/hosting
+[x] index  [x] venta  [x] apadrinacion  [x] historias  [x] servicios  [x] contacto  (estructura base; fotos y textos provisionales)
+[ ] formulario funcional (servicio externo)  [ ] mapa  [ ] menú hamburguesa móvil  [ ] SEO  [ ] optimización  [ ] dominio/hosting
 Idioma: español (posible mallorquín/catalán más adelante).

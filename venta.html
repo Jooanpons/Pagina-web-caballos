@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EXPLICA ESTO: título que sale en la pestaña del navegador y en Google. Máx. ~60 caracteres. -->
     <title>Caballos en venta · Espíritu Equino</title>
+    <!-- EXPLICA ESTO: frase que Google muestra bajo el título (~150 caracteres). Que describa la página. -->
     <meta name="description" content="Caballos disponibles en venta en Mallorca.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- NAVBAR: es IDÉNTICO en todas las páginas. Si cambias un enlace aquí, cámbialo en los 6 HTML.
+         aria-current="page" marca en negrita la página donde estás. -->
     <header>
         <nav class="navbar" aria-label="Navegación principal">
             <ul class="nav-links">
@@ -19,11 +23,11 @@
                 <li class="separator" aria-hidden="true">|</li>
                 <li><a href="apadrinacion.html">Caballos en apadrinación</a></li>
                 <li class="separator" aria-hidden="true">|</li>
-                <li><a href="#">Historias rescatados</a></li>
+                <li><a href="historias.html">Historias rescatados</a></li>
                 <li class="separator" aria-hidden="true">|</li>
-                <li><a href="#">Servicios</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
                 <li class="separator" aria-hidden="true">|</li>
-                <li><a class="destacado" href="#">Ubicación y contacto</a></li>
+                <li><a class="destacado" href="contacto.html">Ubicación y contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -31,21 +35,27 @@
     <main>
         <section class="mini-hero fondo-campo">
             <div class="hero-text">
+                <!-- EXPLICA ESTO: título de la página y una frase corta debajo -->
                 <h1>Caballos en venta</h1>
                 <p>Conoce a los caballos que buscan un nuevo hogar.</p>
             </div>
         </section>
 
         <section class="contenido">
-            <!-- Para añadir un caballo: copia una <article class="tarjeta"> entera y cambia foto, nombre y texto -->
+            <!-- EXPLICA ESTO: para añadir un caballo, copia una <article class="tarjeta"> entera (de <article> a </article>)
+                 y pégala justo debajo de otra. La rejilla se reorganiza sola. -->
             <div class="rejilla">
 
                 <article class="tarjeta">
+                    <!-- EXPLICA ESTO: foto en imagenes/ (ej. imagenes/nombre.jpg). Cambia src y el alt (descripción de la foto). -->
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente del caballo en venta 1">
                     <div class="info">
+                        <!-- EXPLICA ESTO: nombre del caballo -->
                         <h3>Nombre del caballo</h3>
+                        <!-- EXPLICA ESTO: descripción breve que facilite el cliente (precio, edad, etc. SOLO si el cliente los da) -->
                         <p class="descripcion">Descripción provisional. Se sustituirá por el texto real del cliente.</p>
-                        <a class="boton" href="#">Más información</a>
+                        <!-- EXPLICA ESTO: el botón lleva a contacto. Más adelante se puede pasar el nombre del caballo en el enlace. -->
+                        <a class="boton" href="contacto.html">Más información</a>
                     </div>
                 </article>
 
@@ -54,7 +64,7 @@
                     <div class="info">
                         <h3>Nombre del caballo</h3>
                         <p class="descripcion">Descripción provisional. Se sustituirá por el texto real del cliente.</p>
-                        <a class="boton" href="#">Más información</a>
+                        <a class="boton" href="contacto.html">Más información</a>
                     </div>
                 </article>
 

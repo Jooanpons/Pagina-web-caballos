@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EXPLICA ESTO: título que sale en la pestaña del navegador y en Google. Máx. ~60 caracteres. -->
+    <title>Ubicación y contacto · Espíritu Equino</title>
+    <!-- EXPLICA ESTO: frase que Google muestra bajo el título (~150 caracteres). Que describa la página. -->
+    <meta name="description" content="Dónde encontrarnos en Mallorca y cómo contactar con Espíritu Equino.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR: es IDÉNTICO en todas las páginas. Si cambias un enlace aquí, cámbialo en los 6 HTML.
+         aria-current="page" marca en negrita la página donde estás. -->
+    <header>
+        <nav class="navbar" aria-label="Navegación principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="venta.html">Caballos en venta</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="apadrinacion.html">Caballos en apadrinación</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="historias.html">Historias rescatados</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a class="destacado" href="contacto.html" aria-current="page">Ubicación y contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mini-hero fondo-campo">
+            <div class="hero-text">
+                <!-- EXPLICA ESTO: título de la página y una frase corta debajo -->
+                <h1>Ubicación y contacto</h1>
+                <p>Estaremos encantados de atenderte.</p>
+            </div>
+        </section>
+
+        <section class="contenido contacto">
+
+            <div class="contacto-datos">
+                <h2>Datos de contacto</h2>
+                <!-- EXPLICA ESTO: rellenar SOLO con datos reales que dé el cliente. No inventar. -->
+                <ul>
+                    <li><strong>Ubicación:</strong> [pendiente – zona de Mallorca]</li>
+                    <li><strong>Teléfono:</strong> [pendiente]</li>
+                    <li><strong>Email:</strong> [pendiente]</li>
+                    <li><strong>Horario:</strong> [pendiente]</li>
+                    <!-- EXPLICA ESTO: redes sociales: <li><a href="URL" target="_blank" rel="noopener">Instagram</a></li> -->
+                </ul>
+
+                <!-- EXPLICA ESTO: mapa. En Google Maps: Compartir > Insertar un mapa > copiar el <iframe> y pegarlo aquí.
+                     Hazlo cuando el cliente confirme la dirección. -->
+                <div class="mapa-pendiente">Mapa pendiente</div>
+            </div>
+
+            <div class="contacto-form">
+                <h2>Escríbenos</h2>
+                <!-- EXPLICA ESTO: este formulario aún NO envía nada (hace falta un servicio como Formspree o un servidor).
+                     Cuando tengamos el email del cliente, se pone la URL del servicio en action="". -->
+                <form action="#" method="post">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                    <button class="boton" type="submit">Enviar</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+</body>
+</html>

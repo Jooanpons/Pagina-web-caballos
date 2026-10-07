@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EXPLICA ESTO: título que sale en la pestaña del navegador y en Google. Máx. ~60 caracteres. -->
+    <title>Servicios · Espíritu Equino</title>
+    <!-- EXPLICA ESTO: frase que Google muestra bajo el título (~150 caracteres). Que describa la página. -->
+    <meta name="description" content="Servicios relacionados con caballos en Mallorca.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR: es IDÉNTICO en todas las páginas. Si cambias un enlace aquí, cámbialo en los 6 HTML.
+         aria-current="page" marca en negrita la página donde estás. -->
+    <header>
+        <nav class="navbar" aria-label="Navegación principal">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="venta.html">Caballos en venta</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="apadrinacion.html">Caballos en apadrinación</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="historias.html">Historias rescatados</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="servicios.html" aria-current="page">Servicios</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a class="destacado" href="contacto.html">Ubicación y contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="mini-hero fondo-campo">
+            <div class="hero-text">
+                <!-- EXPLICA ESTO: título de la página y una frase corta debajo -->
+                <h1>Servicios</h1>
+                <p>Lo que podemos ofrecerte.</p>
+            </div>
+        </section>
+
+        <section class="contenido">
+            <!-- EXPLICA ESTO: intro opcional sobre los servicios (texto del cliente) -->
+            <p class="intro">Texto introductorio provisional.</p>
+
+            <!-- EXPLICA ESTO: una tarjeta por servicio. Copia/borra <article> según los servicios reales.
+                 Si un servicio necesita foto, añade <img src="imagenes/…" alt="…"> antes de <div class="info">. -->
+            <div class="rejilla">
+
+                <article class="tarjeta tarjeta-servicio">
+                    <div class="info">
+                        <!-- EXPLICA ESTO: nombre del servicio (ej. el que indique el cliente) -->
+                        <h3>Nombre del servicio 1</h3>
+                        <!-- EXPLICA ESTO: qué incluye el servicio. Precios/horarios SOLO si el cliente los da. -->
+                        <p>Descripción provisional del servicio.</p>
+                        <a class="boton" href="contacto.html">Consultar</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta tarjeta-servicio">
+                    <div class="info">
+                        <!-- EXPLICA ESTO: nombre del servicio (ej. el que indique el cliente) -->
+                        <h3>Nombre del servicio 2</h3>
+                        <!-- EXPLICA ESTO: qué incluye el servicio. Precios/horarios SOLO si el cliente los da. -->
+                        <p>Descripción provisional del servicio.</p>
+                        <a class="boton" href="contacto.html">Consultar</a>
+                    </div>
+                </article>
+
+                <article class="tarjeta tarjeta-servicio">
+                    <div class="info">
+                        <!-- EXPLICA ESTO: nombre del servicio (ej. el que indique el cliente) -->
+                        <h3>Nombre del servicio 3</h3>
+                        <!-- EXPLICA ESTO: qué incluye el servicio. Precios/horarios SOLO si el cliente los da. -->
+                        <p>Descripción provisional del servicio.</p>
+                        <a class="boton" href="contacto.html">Consultar</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

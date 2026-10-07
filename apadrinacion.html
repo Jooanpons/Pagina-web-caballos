@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- EXPLICA ESTO: título que sale en la pestaña del navegador y en Google. Máx. ~60 caracteres. -->
     <title>Caballos en apadrinación · Espíritu Equino</title>
+    <!-- EXPLICA ESTO: frase que Google muestra bajo el título (~150 caracteres). Que describa la página. -->
     <meta name="description" content="Conoce a los caballos que buscan un padrino en Mallorca.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
+    <!-- NAVBAR: es IDÉNTICO en todas las páginas. Si cambias un enlace aquí, cámbialo en los 6 HTML.
+         aria-current="page" marca en negrita la página donde estás. -->
     <header>
         <nav class="navbar" aria-label="Navegación principal">
             <ul class="nav-links">
@@ -19,11 +23,11 @@
                 <li class="separator" aria-hidden="true">|</li>
                 <li><a href="apadrinacion.html" aria-current="page">Caballos en apadrinación</a></li>
                 <li class="separator" aria-hidden="true">|</li>
-                <li><a href="#">Historias rescatados</a></li>
+                <li><a href="historias.html">Historias rescatados</a></li>
                 <li class="separator" aria-hidden="true">|</li>
-                <li><a href="#">Servicios</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
                 <li class="separator" aria-hidden="true">|</li>
-                <li><a class="destacado" href="#">Ubicación y contacto</a></li>
+                <li><a class="destacado" href="contacto.html">Ubicación y contacto</a></li>
             </ul>
         </nav>
     </header>
@@ -31,19 +35,25 @@
     <main>
         <section class="mini-hero fondo-campo">
             <div class="hero-text">
+                <!-- EXPLICA ESTO: título de la página y una frase corta debajo -->
                 <h1>Caballos en apadrinación</h1>
                 <p>Aquí puedes ver los caballos que actualmente buscan un padrino.</p>
             </div>
         </section>
 
         <section class="contenido">
-            <!-- Para añadir un caballo: copia una <article class="tarjeta"> entera -->
+            <!-- EXPLICA ESTO (opcional): párrafo que explique qué es apadrinar y cómo hacerlo, con datos reales del cliente -->
+            <!-- <p class="intro">Texto sobre cómo apadrinar…</p> -->
+
+            <!-- EXPLICA ESTO: para añadir o quitar un caballo, copia/borra una <article class="tarjeta"> entera.
+                 Foto: cambia src por imagenes/nombre.jpg (misma proporción 4:3 queda mejor). -->
             <div class="rejilla">
 
                 <article class="tarjeta">
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Rayo" loading="lazy">
                     <div class="info">
                         <h3>Rayo</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Rayo (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Rayo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -53,6 +63,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Chilly" loading="lazy">
                     <div class="info">
                         <h3>Chilly</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Chilly (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Chilly. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -62,6 +73,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Max" loading="lazy">
                     <div class="info">
                         <h3>Max</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Max (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Max. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -71,6 +83,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Quinne" loading="lazy">
                     <div class="info">
                         <h3>Quinne</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Quinne (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Quinne. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -80,6 +93,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Bella" loading="lazy">
                     <div class="info">
                         <h3>Bella</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Bella (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Bella. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -89,6 +103,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Pua" loading="lazy">
                     <div class="info">
                         <h3>Pua</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Pua (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Pua. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -98,6 +113,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Bril" loading="lazy">
                     <div class="info">
                         <h3>Bril</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Bril (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Bril. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -107,6 +123,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Tilly" loading="lazy">
                     <div class="info">
                         <h3>Tilly</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Tilly (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Tilly. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -116,6 +133,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Rambo" loading="lazy">
                     <div class="info">
                         <h3>Rambo</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Rambo (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Rambo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -125,6 +143,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Alba" loading="lazy">
                     <div class="info">
                         <h3>Alba</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Alba (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Alba. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -134,6 +153,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Harry" loading="lazy">
                     <div class="info">
                         <h3>Harry</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Harry (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Harry. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -143,6 +163,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Sambo" loading="lazy">
                     <div class="info">
                         <h3>Sambo</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Sambo (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Sambo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -152,6 +173,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Albie" loading="lazy">
                     <div class="info">
                         <h3>Albie</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Albie (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Albie. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -161,6 +183,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Dahlia" loading="lazy">
                     <div class="info">
                         <h3>Dahlia</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Dahlia (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Dahlia. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -170,6 +193,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Jarana" loading="lazy">
                     <div class="info">
                         <h3>Jarana</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Jarana (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Jarana. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -179,6 +203,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Caramelo" loading="lazy">
                     <div class="info">
                         <h3>Caramelo</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Caramelo (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Caramelo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -188,6 +213,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Ultimatum" loading="lazy">
                     <div class="info">
                         <h3>Ultimatum</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Ultimatum (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Ultimatum. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -197,6 +223,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Johnny" loading="lazy">
                     <div class="info">
                         <h3>Johnny</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Johnny (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Johnny. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -206,6 +233,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Dimond" loading="lazy">
                     <div class="info">
                         <h3>Dimond</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Dimond (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Dimond. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -215,6 +243,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Gabriela" loading="lazy">
                     <div class="info">
                         <h3>Gabriela</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Gabriela (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Gabriela. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -224,6 +253,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Neu" loading="lazy">
                     <div class="info">
                         <h3>Neu</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Neu (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Neu. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -233,6 +263,7 @@
                     <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Romi" loading="lazy">
                     <div class="info">
                         <h3>Romi</h3>
+                        <!-- EXPLICA ESTO: pega aquí el texto libre del cliente sobre Romi (cualquier longitud) -->
                         <p class="descripcion">Texto provisional sobre Romi. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
                         <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
                     </div>
@@ -242,7 +273,8 @@
         </section>
     </main>
 
-    <!-- LEER MÁS / LEER MENOS: el texto se despliega dentro de la tarjeta -->
+    <!-- LEER MÁS / LEER MENOS: despliega el texto dentro de la tarjeta.
+         EXPLICA ESTO: no hace falta tocarlo; funciona solo con cada <article class="tarjeta">. -->
     <script>
         document.querySelectorAll(".tarjeta").forEach(tarjeta => {
             const texto = tarjeta.querySelector(".descripcion");

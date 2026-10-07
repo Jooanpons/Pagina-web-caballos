@@ -284,3 +284,140 @@ header {
         padding-top: 130px; /* el navbar ocupa más alto al apilarse */
     }
 }
+
+/* =====================================================
+   9. HISTORIAS · SERVICIOS · CONTACTO
+   ===================================================== */
+
+/* --- Historias: foto grande + texto, alternando lados --- */
+.historia {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    align-items: center;
+    background: #fff;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.historia:nth-child(even) img {
+    order: 2; /* la foto pasa a la derecha en las historias pares */
+}
+
+.historia img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 320px;
+    object-fit: cover;
+}
+
+.historia-texto {
+    padding: 28px;
+}
+
+.historia-texto h2 {
+    color: var(--verde-oscuro);
+    margin-bottom: 14px;
+}
+
+.historia-texto h3 {
+    color: var(--tierra);
+    font-size: 1.05rem;
+    margin: 14px 0 4px;
+}
+
+.historia-texto p {
+    line-height: 1.6;
+}
+
+/* --- Servicios: tarjetas sin foto --- */
+.tarjeta-servicio .info {
+    padding: 26px 22px;
+}
+
+.tarjeta-servicio p {
+    line-height: 1.55;
+}
+
+/* --- Contacto: datos + formulario --- */
+.contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.contacto h2 {
+    color: var(--verde-oscuro);
+    margin-bottom: 16px;
+}
+
+.contacto-datos ul {
+    list-style: none;
+    line-height: 2;
+    margin-bottom: 24px;
+}
+
+.mapa-pendiente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 220px;
+    background: #d9d2c0;
+    border-radius: var(--radio);
+    color: #7a6f57;
+}
+
+.contacto-datos iframe {
+    width: 100%;
+    min-height: 260px;
+    border: 0;
+    border-radius: var(--radio);
+}
+
+.contacto-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.contacto-form label {
+    font-weight: 600;
+    margin-top: 8px;
+}
+
+.contacto-form input,
+.contacto-form textarea {
+    font: inherit;
+    padding: 10px 12px;
+    border: 1px solid #c9c2b0;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.contacto-form input:focus,
+.contacto-form textarea:focus {
+    outline: 2px solid var(--verde);
+    border-color: var(--verde);
+}
+
+.contacto-form .boton {
+    align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+    .historia,
+    .contacto {
+        grid-template-columns: 1fr;
+    }
+
+    .historia:nth-child(even) img {
+        order: 0;
+    }
+
+    .historia img {
+        min-height: 240px;
+    }
+}
