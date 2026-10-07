@@ -3,92 +3,266 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caballos en Apadrinación - Espíritu Equino</title>
-
-    <!-- ICONOS (opcional, pero tú los tienes cargados) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- CSS GENERAL -->
+    <title>Caballos en apadrinación · Espíritu Equino</title>
+    <meta name="description" content="Conoce a los caballos que buscan un padrino en Mallorca.">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- NAVBAR (MISMA QUE EN INDEX) -->
     <header>
-        <nav class="navbar">
+        <nav class="navbar" aria-label="Navegación principal">
             <ul class="nav-links">
-
-                <li><a href="index.html">Caballos en venta</a></li>
-                <li class="separator">|</li>
-
-                <li><a href="apadrinacion.html">Caballos en apadrinación</a></li>
-                <li class="separator">|</li>
-
+                <li><a href="index.html">Inicio</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="venta.html">Caballos en venta</a></li>
+                <li class="separator" aria-hidden="true">|</li>
+                <li><a href="apadrinacion.html" aria-current="page">Caballos en apadrinación</a></li>
+                <li class="separator" aria-hidden="true">|</li>
                 <li><a href="#">Historias rescatados</a></li>
-                <li class="separator">|</li>
-
+                <li class="separator" aria-hidden="true">|</li>
                 <li><a href="#">Servicios</a></li>
-                <li class="separator">|</li>
-
+                <li class="separator" aria-hidden="true">|</li>
                 <li><a class="destacado" href="#">Ubicación y contacto</a></li>
-
             </ul>
         </nav>
     </header>
 
-
-    <section class="contenido-normal">
-
-        <h1>Caballos en Apadrinación</h1>
-
-        <p class="intro">
-            Aquí puedes ver todos los caballos que actualmente buscan un padrino.  
-            Haz clic en “Leer más” para ver la historia completa del caballo.
-        </p>
-
-        <div class="tarjetas-h">
-
-            <div class="tarjeta-h">
-                <img src="imagenes/caballo1.jpg" alt="Caballo 1">
-
-                <div class="info">
-                    <h3>Rayo</h3>
-
-                    <p class="resumen">
-                        Aquí va un texto corto que tú escribirás.
-                    </p>
-
-                    <p class="completo">
-                        Aquí va el texto largo que aparecerá al pulsar “Leer más”.
-                        Puedes ampliarlo todo lo que quieras.
-                    </p>
-
-                    <button class="leer-mas">Leer más</button>
-                </div>
+    <main>
+        <section class="mini-hero fondo-campo">
+            <div class="hero-text">
+                <h1>Caballos en apadrinación</h1>
+                <p>Aquí puedes ver los caballos que actualmente buscan un padrino.</p>
             </div>
+        </section>
 
+        <section class="contenido">
+            <!-- Para añadir un caballo: copia una <article class="tarjeta"> entera -->
+            <div class="rejilla">
 
-        </div>
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Rayo" loading="lazy">
+                    <div class="info">
+                        <h3>Rayo</h3>
+                        <p class="descripcion">Texto provisional sobre Rayo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
 
-    </section>
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Chilly" loading="lazy">
+                    <div class="info">
+                        <h3>Chilly</h3>
+                        <p class="descripcion">Texto provisional sobre Chilly. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
 
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Max" loading="lazy">
+                    <div class="info">
+                        <h3>Max</h3>
+                        <p class="descripcion">Texto provisional sobre Max. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
 
-    <!-- SCRIPT LEER MÁS -->
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Quinne" loading="lazy">
+                    <div class="info">
+                        <h3>Quinne</h3>
+                        <p class="descripcion">Texto provisional sobre Quinne. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Bella" loading="lazy">
+                    <div class="info">
+                        <h3>Bella</h3>
+                        <p class="descripcion">Texto provisional sobre Bella. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Pua" loading="lazy">
+                    <div class="info">
+                        <h3>Pua</h3>
+                        <p class="descripcion">Texto provisional sobre Pua. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Bril" loading="lazy">
+                    <div class="info">
+                        <h3>Bril</h3>
+                        <p class="descripcion">Texto provisional sobre Bril. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Tilly" loading="lazy">
+                    <div class="info">
+                        <h3>Tilly</h3>
+                        <p class="descripcion">Texto provisional sobre Tilly. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Rambo" loading="lazy">
+                    <div class="info">
+                        <h3>Rambo</h3>
+                        <p class="descripcion">Texto provisional sobre Rambo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Alba" loading="lazy">
+                    <div class="info">
+                        <h3>Alba</h3>
+                        <p class="descripcion">Texto provisional sobre Alba. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Harry" loading="lazy">
+                    <div class="info">
+                        <h3>Harry</h3>
+                        <p class="descripcion">Texto provisional sobre Harry. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Sambo" loading="lazy">
+                    <div class="info">
+                        <h3>Sambo</h3>
+                        <p class="descripcion">Texto provisional sobre Sambo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Albie" loading="lazy">
+                    <div class="info">
+                        <h3>Albie</h3>
+                        <p class="descripcion">Texto provisional sobre Albie. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Dahlia" loading="lazy">
+                    <div class="info">
+                        <h3>Dahlia</h3>
+                        <p class="descripcion">Texto provisional sobre Dahlia. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Jarana" loading="lazy">
+                    <div class="info">
+                        <h3>Jarana</h3>
+                        <p class="descripcion">Texto provisional sobre Jarana. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Caramelo" loading="lazy">
+                    <div class="info">
+                        <h3>Caramelo</h3>
+                        <p class="descripcion">Texto provisional sobre Caramelo. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Ultimatum" loading="lazy">
+                    <div class="info">
+                        <h3>Ultimatum</h3>
+                        <p class="descripcion">Texto provisional sobre Ultimatum. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Johnny" loading="lazy">
+                    <div class="info">
+                        <h3>Johnny</h3>
+                        <p class="descripcion">Texto provisional sobre Johnny. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Dimond" loading="lazy">
+                    <div class="info">
+                        <h3>Dimond</h3>
+                        <p class="descripcion">Texto provisional sobre Dimond. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Gabriela" loading="lazy">
+                    <div class="info">
+                        <h3>Gabriela</h3>
+                        <p class="descripcion">Texto provisional sobre Gabriela. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Neu" loading="lazy">
+                    <div class="info">
+                        <h3>Neu</h3>
+                        <p class="descripcion">Texto provisional sobre Neu. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+                <article class="tarjeta">
+                    <img src="imagenes/placeholder-caballo.svg" alt="Foto pendiente de Romi" loading="lazy">
+                    <div class="info">
+                        <h3>Romi</h3>
+                        <p class="descripcion">Texto provisional sobre Romi. Aquí se pegará la descripción libre que facilite el cliente, tan larga como haga falta.</p>
+                        <button class="boton boton-secundario leer-mas" type="button" aria-expanded="false">Leer más</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- LEER MÁS / LEER MENOS: el texto se despliega dentro de la tarjeta -->
     <script>
-        document.querySelectorAll(".leer-mas").forEach(boton => {
-            boton.addEventListener("click", () => {
-                const tarjeta = boton.parentElement;
-                tarjeta.classList.toggle("mostrar");
+        document.querySelectorAll(".tarjeta").forEach(tarjeta => {
+            const texto = tarjeta.querySelector(".descripcion");
+            const boton = tarjeta.querySelector(".leer-mas");
+            if (!texto || !boton) return;
 
-                boton.textContent = tarjeta.classList.contains("mostrar")
-                    ? "Leer menos"
-                    : "Leer más";
+            // Si el texto cabe entero en 3 líneas, no hace falta el botón
+            if (texto.scrollHeight <= texto.clientHeight + 1) {
+                boton.hidden = true;
+                return;
+            }
+
+            boton.addEventListener("click", () => {
+                const abierto = boton.getAttribute("aria-expanded") === "true";
+                texto.style.maxHeight = abierto ? "" : texto.scrollHeight + "px";
+                boton.setAttribute("aria-expanded", String(!abierto));
+                boton.textContent = abierto ? "Leer más" : "Leer menos";
             });
         });
     </script>
 
 </body>
 </html>
-
-
