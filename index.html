@@ -16,7 +16,12 @@
          aria-current="page" marca en negrita la página donde estás. -->
     <header>
         <nav class="navbar" aria-label="Navegación principal">
-            <ul class="nav-links">
+            <!-- EXPLICA ESTO: botón de menú que solo se ve en móvil. Lo controla js/main.js; no hace falta tocarlo. -->
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+                <span class="menu-icono" aria-hidden="true"></span>
+                <span class="menu-texto">Menú</span>
+            </button>
+            <ul class="nav-links" id="menu-principal">
                 <li><a href="index.html" aria-current="page">Inicio</a></li>
                 <li class="separator" aria-hidden="true">|</li>
                 <li><a href="venta.html">Caballos en venta</a></li>
@@ -33,7 +38,7 @@
     </header>
 
     <main>
-        <!-- HERO: pantalla completa con foto de fondo (imagenes/fondo-campo.jpg) y capa oscura -->
+        <!-- 1. HERO: pantalla completa con fondo y capa oscura -->
         <section class="hero fondo-campo">
             <div class="hero-text">
                 <h1>ESPÍRITU EQUINO</h1>
@@ -42,9 +47,104 @@
                     Dedicados al rescate, cuidado y bienestar de los caballos de Mallorca.
                     Descubre historias reales, ayuda apadrinando o adoptando, y conoce nuestra misión.
                 </p>
+                <!-- EXPLICA ESTO: dos botones de acción. Cambia el texto o el enlace si lo ves necesario. -->
+                <div class="botones-hero">
+                    <a class="boton" href="apadrinacion.html">Apadrina un caballo</a>
+                    <a class="boton boton-claro" href="#mision">Conoce nuestra misión</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. MISIÓN: el id="mision" es el destino del botón del hero -->
+        <section class="seccion" id="mision">
+            <div class="contenido contenido-estrecho">
+                <!-- EXPLICA ESTO: título de la sección (ej. Nuestra misión / Quiénes somos) -->
+                <h2 class="titulo-seccion">Nuestra misión</h2>
+                <!-- EXPLICA ESTO: 2 o 3 párrafos sobre quiénes son, qué hacen y por qué. Texto real del cliente. -->
+                <p>Texto provisional sobre la misión del proyecto. Aquí se explicará quiénes son, qué hacen por los caballos de Mallorca y por qué empezó todo.</p>
+                <p>Segundo párrafo provisional: cómo trabajan y cómo puede ayudar quien visite la web.</p>
+            </div>
+        </section>
+
+        <!-- 3. ACCESOS RÁPIDOS: llevan a las secciones principales -->
+        <section class="seccion seccion-clara">
+            <div class="contenido">
+                <h2 class="titulo-seccion">Cómo puedes ayudar</h2>
+                <!-- EXPLICA ESTO: tres tarjetas. Cambia título y frase. Se pueden añadir fotos al final del proyecto. -->
+                <div class="rejilla">
+                    <article class="tarjeta tarjeta-servicio">
+                        <div class="info">
+                            <h3>Apadrina</h3>
+                            <p>Texto provisional: explica en una frase qué es apadrinar.</p>
+                            <a class="boton" href="apadrinacion.html">Ver caballos</a>
+                        </div>
+                    </article>
+                    <article class="tarjeta tarjeta-servicio">
+                        <div class="info">
+                            <h3>Adopta o compra</h3>
+                            <p>Texto provisional: explica en una frase los caballos que buscan hogar.</p>
+                            <a class="boton" href="venta.html">Ver caballos</a>
+                        </div>
+                    </article>
+                    <article class="tarjeta tarjeta-servicio">
+                        <div class="info">
+                            <h3>Conoce sus historias</h3>
+                            <p>Texto provisional: explica en una frase qué verá quien lea las historias.</p>
+                            <a class="boton" href="historias.html">Leer historias</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPLICA ESTO (opcional): bloque de cifras (caballos rescatados, apadrinados…). Solo con números REALES que
+             confirme el cliente. Si no, déjalo comentado. Pídeme que lo active cuando los tengas. -->
+
+        <!-- 4. CIERRE: invitación a contactar -->
+        <section class="seccion seccion-verde">
+            <div class="contenido contenido-estrecho">
+                <h2 class="titulo-seccion">¿Hablamos?</h2>
+                <!-- EXPLICA ESTO: frase de cierre invitando a escribir (texto del cliente) -->
+                <p>Texto provisional: si tienes dudas o quieres colaborar, escríbenos.</p>
+                <a class="boton" href="contacto.html">Contactar</a>
             </div>
         </section>
     </main>
+
+    <!-- FOOTER: igual en todas las páginas. Si cambias algo aquí, cámbialo en los 6 HTML. -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div>
+                <h2>Espíritu Equino</h2>
+                <!-- EXPLICA ESTO: frase corta que resuma el proyecto (la dará el cliente) -->
+                <p>Rescate, cuidado y bienestar de los caballos de Mallorca.</p>
+            </div>
+            <div>
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="venta.html">Caballos en venta</a></li>
+                    <li><a href="apadrinacion.html">Caballos en apadrinación</a></li>
+                    <li><a href="historias.html">Historias rescatados</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <!-- EXPLICA ESTO: datos reales del cliente (mismos que en contacto.html). No inventar. -->
+                <ul>
+                    <li>Mallorca</li>
+                    <li>Teléfono: [pendiente]</li>
+                    <li>Email: [pendiente]</li>
+                    <li><a href="contacto.html">Formulario de contacto</a></li>
+                </ul>
+                <!-- EXPLICA ESTO: redes sociales cuando existan: <a href="URL" target="_blank" rel="noopener">Instagram</a> -->
+            </div>
+        </div>
+        <p class="footer-copy">&copy; Espíritu Equino. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Menú móvil (común a todas las páginas) -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>

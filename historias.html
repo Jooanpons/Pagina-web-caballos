@@ -16,7 +16,12 @@
          aria-current="page" marca en negrita la página donde estás. -->
     <header>
         <nav class="navbar" aria-label="Navegación principal">
-            <ul class="nav-links">
+            <!-- EXPLICA ESTO: botón de menú que solo se ve en móvil. Lo controla js/main.js; no hace falta tocarlo. -->
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+                <span class="menu-icono" aria-hidden="true"></span>
+                <span class="menu-texto">Menú</span>
+            </button>
+            <ul class="nav-links" id="menu-principal">
                 <li><a href="index.html">Inicio</a></li>
                 <li class="separator" aria-hidden="true">|</li>
                 <li><a href="venta.html">Caballos en venta</a></li>
@@ -89,6 +94,41 @@
 
         </section>
     </main>
+
+    <!-- FOOTER: igual en todas las páginas. Si cambias algo aquí, cámbialo en los 6 HTML. -->
+    <footer class="footer">
+        <div class="footer-contenido">
+            <div>
+                <h2>Espíritu Equino</h2>
+                <!-- EXPLICA ESTO: frase corta que resuma el proyecto (la dará el cliente) -->
+                <p>Rescate, cuidado y bienestar de los caballos de Mallorca.</p>
+            </div>
+            <div>
+                <h3>Explora</h3>
+                <ul>
+                    <li><a href="venta.html">Caballos en venta</a></li>
+                    <li><a href="apadrinacion.html">Caballos en apadrinación</a></li>
+                    <li><a href="historias.html">Historias rescatados</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h3>Contacto</h3>
+                <!-- EXPLICA ESTO: datos reales del cliente (mismos que en contacto.html). No inventar. -->
+                <ul>
+                    <li>Mallorca</li>
+                    <li>Teléfono: [pendiente]</li>
+                    <li>Email: [pendiente]</li>
+                    <li><a href="contacto.html">Formulario de contacto</a></li>
+                </ul>
+                <!-- EXPLICA ESTO: redes sociales cuando existan: <a href="URL" target="_blank" rel="noopener">Instagram</a> -->
+            </div>
+        </div>
+        <p class="footer-copy">&copy; Espíritu Equino. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Menú móvil (común a todas las páginas) -->
+    <script src="js/main.js"></script>
 
 </body>
 </html>

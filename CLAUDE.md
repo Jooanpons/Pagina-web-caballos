@@ -9,6 +9,7 @@ HTML + CSS + JS mínimo. Sin frameworks. Un único `css/style.css`. Se prueba co
 
     index · venta · apadrinacion · historias · servicios · contacto  (.html, en la raíz)
     css/style.css
+    js/main.js                                     (menú móvil; el leer más está inline en apadrinacion.html)
     imagenes/                                      (fondo-campo.jpg, fotos de caballos)
 
 Rutas relativas: HTML→CSS `css/style.css`; HTML→imagen `imagenes/x.jpg`; CSS→imagen `../imagenes/x.jpg`. Nunca rutas con `/` inicial.
@@ -41,5 +42,8 @@ con "Leer más / Leer menos" que se despliega en la propia tarjeta con animació
 
 ## Estado
 [x] index  [x] venta  [x] apadrinacion  [x] historias  [x] servicios  [x] contacto  (estructura base; fotos y textos provisionales)
-[ ] formulario funcional (servicio externo)  [ ] mapa  [ ] menú hamburguesa móvil  [ ] SEO  [ ] optimización  [ ] dominio/hosting
+[x] fase 1: home completa, footer común, menú hamburguesa móvil
+[ ] fase 2: contenido real (misión, pasos para apadrinar)  [ ] fase 3: formulario funcional (servicio externo), mapa
+[ ] fase 4: SEO, accesibilidad, aviso legal  [ ] fase 5 (lo último): imágenes, logo, favicon
+[ ] SEO  [ ] optimización  [ ] dominio/hosting
 Idioma: español (posible mallorquín/catalán más adelante).
