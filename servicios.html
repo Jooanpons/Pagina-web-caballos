@@ -7,6 +7,15 @@
     <title>Servicios · Espíritu Equino</title>
     <!-- EXPLICA ESTO: frase que Google muestra bajo el título (~150 caracteres). Que describa la página. -->
     <meta name="description" content="Servicios relacionados con caballos en Mallorca.">
+    <meta name="theme-color" content="#2f4a2f">
+    <!-- EXPLICA ESTO: datos para cuando alguien comparte la web en WhatsApp/Instagram/Facebook. -->
+    <meta property="og:site_name" content="Espíritu Equino">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Servicios · Espíritu Equino">
+    <meta property="og:description" content="Servicios relacionados con caballos en Mallorca.">
+    <!-- EXPLICA ESTO (fase de imágenes): añadir aquí <meta property="og:image" content="https://TU-DOMINIO/imagenes/portada.jpg">
+         y <link rel="icon" href="imagenes/favicon.png"> cuando existan el logo y la foto de portada. -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,6 +23,7 @@
 
     <!-- NAVBAR: es IDÉNTICO en todas las páginas. Si cambias un enlace aquí, cámbialo en los 6 HTML.
          aria-current="page" marca en negrita la página donde estás. -->
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
     <header>
         <nav class="navbar" aria-label="Navegación principal">
             <!-- EXPLICA ESTO: botón de menú que solo se ve en móvil. Lo controla js/main.js; no hace falta tocarlo. -->
@@ -37,7 +47,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
         <section class="mini-hero fondo-campo">
             <div class="hero-text">
                 <!-- EXPLICA ESTO: título de la página y una frase corta debajo -->
@@ -116,7 +126,13 @@
                 <!-- EXPLICA ESTO: redes sociales cuando existan: <a href="URL" target="_blank" rel="noopener">Instagram</a> -->
             </div>
         </div>
-        <p class="footer-copy">&copy; Espíritu Equino. Todos los derechos reservados.</p>
+        <p class="footer-copy">
+            &copy; Espíritu Equino. Todos los derechos reservados.
+            <span class="footer-legal">
+                <a href="aviso-legal.html">Aviso legal</a> ·
+                <a href="privacidad.html">Privacidad y cookies</a>
+            </span>
+        </p>
     </footer>
 
     <!-- Menú móvil (común a todas las páginas) -->

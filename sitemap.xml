@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EXPLICA ESTO: cambia TU-DOMINIO.com por el dominio real cuando exista. Si añades una página, añade su <url>. -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://TU-DOMINIO.com/</loc></url>
+  <url><loc>https://TU-DOMINIO.com/venta.html</loc></url>
+  <url><loc>https://TU-DOMINIO.com/apadrinacion.html</loc></url>
+  <url><loc>https://TU-DOMINIO.com/historias.html</loc></url>
+  <url><loc>https://TU-DOMINIO.com/servicios.html</loc></url>
+  <url><loc>https://TU-DOMINIO.com/contacto.html</loc></url>
+  <url><loc>https://TU-DOMINIO.com/aviso-legal.html</loc></url>
+  <url><loc>https://TU-DOMINIO.com/privacidad.html</loc></url>
+</urlset>

@@ -7,6 +7,15 @@
     <title>Caballos en apadrinación · Espíritu Equino</title>
     <!-- EXPLICA ESTO: frase que Google muestra bajo el título (~150 caracteres). Que describa la página. -->
     <meta name="description" content="Conoce a los caballos que buscan un padrino en Mallorca.">
+    <meta name="theme-color" content="#2f4a2f">
+    <!-- EXPLICA ESTO: datos para cuando alguien comparte la web en WhatsApp/Instagram/Facebook. -->
+    <meta property="og:site_name" content="Espíritu Equino">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Caballos en apadrinación · Espíritu Equino">
+    <meta property="og:description" content="Conoce a los caballos que buscan un padrino en Mallorca.">
+    <!-- EXPLICA ESTO (fase de imágenes): añadir aquí <meta property="og:image" content="https://TU-DOMINIO/imagenes/portada.jpg">
+         y <link rel="icon" href="imagenes/favicon.png"> cuando existan el logo y la foto de portada. -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,6 +23,7 @@
 
     <!-- NAVBAR: es IDÉNTICO en todas las páginas. Si cambias un enlace aquí, cámbialo en los 6 HTML.
          aria-current="page" marca en negrita la página donde estás. -->
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
     <header>
         <nav class="navbar" aria-label="Navegación principal">
             <!-- EXPLICA ESTO: botón de menú que solo se ve en móvil. Lo controla js/main.js; no hace falta tocarlo. -->
@@ -37,12 +47,34 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
         <section class="mini-hero fondo-campo">
             <div class="hero-text">
                 <!-- EXPLICA ESTO: título de la página y una frase corta debajo -->
                 <h1>Caballos en apadrinación</h1>
                 <p>Aquí puedes ver los caballos que actualmente buscan un padrino.</p>
+            </div>
+        </section>
+
+        <!-- CÓMO APADRINAR: 3 pasos. EXPLICA ESTO: sustituir por el proceso REAL del cliente (puede haber más o menos pasos). -->
+        <section class="seccion">
+            <div class="contenido">
+                <h2 class="titulo-seccion">Cómo apadrinar</h2>
+                <ol class="pasos">
+                    <li>
+                        <h3>Elige un caballo</h3>
+                        <p>Texto provisional: mira los caballos de más abajo y elige al que quieras ayudar.</p>
+                    </li>
+                    <li>
+                        <h3>Contacta con nosotros</h3>
+                        <p>Texto provisional: escríbenos o llámanos y te explicamos cómo funciona.</p>
+                    </li>
+                    <li>
+                        <h3>Empieza a ayudar</h3>
+                        <p>Texto provisional: qué aporta el padrino y qué recibe a cambio (cuota, visitas, noticias…).</p>
+                    </li>
+                </ol>
+                <p class="centrado"><a class="boton" href="contacto.html">Quiero apadrinar</a></p>
             </div>
         </section>
 
@@ -276,6 +308,28 @@
 
             </div>
         </section>
+
+        <!-- PREGUNTAS FRECUENTES. EXPLICA ESTO: cada <details> es una pregunta que se despliega. Copia/borra los que haga falta
+             con las dudas REALES que suelan hacer al cliente. -->
+        <section class="seccion seccion-clara">
+            <div class="contenido contenido-estrecho">
+                <h2 class="titulo-seccion">Preguntas frecuentes</h2>
+                <div class="faq">
+                    <details>
+                        <summary>¿Qué significa apadrinar un caballo?</summary>
+                        <p>Respuesta provisional.</p>
+                    </details>
+                    <details>
+                        <summary>¿Cuánto cuesta apadrinar?</summary>
+                        <p>Respuesta provisional. Poner cifras solo si el cliente las confirma.</p>
+                    </details>
+                    <details>
+                        <summary>¿Puedo visitar a mi caballo apadrinado?</summary>
+                        <p>Respuesta provisional.</p>
+                    </details>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- FOOTER: igual en todas las páginas. Si cambias algo aquí, cámbialo en los 6 HTML. -->
@@ -307,7 +361,13 @@
                 <!-- EXPLICA ESTO: redes sociales cuando existan: <a href="URL" target="_blank" rel="noopener">Instagram</a> -->
             </div>
         </div>
-        <p class="footer-copy">&copy; Espíritu Equino. Todos los derechos reservados.</p>
+        <p class="footer-copy">
+            &copy; Espíritu Equino. Todos los derechos reservados.
+            <span class="footer-legal">
+                <a href="aviso-legal.html">Aviso legal</a> ·
+                <a href="privacidad.html">Privacidad y cookies</a>
+            </span>
+        </p>
     </footer>
 
     <!-- LEER MÁS / LEER MENOS: despliega el texto dentro de la tarjeta.

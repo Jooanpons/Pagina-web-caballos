@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# EXPLICA ESTO: cambia TU-DOMINIO.com por el dominio real cuando exista
+Sitemap: https://TU-DOMINIO.com/sitemap.xml

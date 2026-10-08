@@ -16,3 +16,18 @@ if (boton && menu) {
     menu.addEventListener("click", e => { if (e.target.closest("a")) cerrar(); });
     document.addEventListener("keydown", e => { if (e.key === "Escape") cerrar(); });
 }
+
+/* Formulario de contacto: mientras no esté conectado a un servicio (action="#"),
+   avisa en vez de aparentar que ha enviado el mensaje */
+const formulario = document.querySelector("[data-formulario]");
+
+if (formulario) {
+    const aviso = formulario.querySelector(".form-aviso");
+
+    formulario.addEventListener("submit", e => {
+        if (formulario.getAttribute("action") === "#") {
+            e.preventDefault();
+            aviso.textContent = "El formulario aún no está conectado, así que este mensaje no se ha enviado. Por favor, contacta por otro medio.";
+        }
+    });
+}

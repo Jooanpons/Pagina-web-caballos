@@ -7,7 +7,8 @@ Tiene Grado Medio de Informática: no explicar qué es HTML/CSS, pero sí explic
 ## Stack y estructura
 HTML + CSS + JS mínimo. Sin frameworks. Un único `css/style.css`. Se prueba con Live Server.
 
-    index · venta · apadrinacion · historias · servicios · contacto  (.html, en la raíz)
+    index · venta · apadrinacion · historias · servicios · contacto · aviso-legal · privacidad · 404  (.html, en la raíz)
+    robots.txt · sitemap.xml
     css/style.css
     js/main.js                                     (menú móvil; el leer más está inline en apadrinacion.html)
     imagenes/                                      (fondo-campo.jpg, fotos de caballos)
@@ -43,7 +44,9 @@ con "Leer más / Leer menos" que se despliega en la propia tarjeta con animació
 ## Estado
 [x] index  [x] venta  [x] apadrinacion  [x] historias  [x] servicios  [x] contacto  (estructura base; fotos y textos provisionales)
 [x] fase 1: home completa, footer común, menú hamburguesa móvil
-[ ] fase 2: contenido real (misión, pasos para apadrinar)  [ ] fase 3: formulario funcional (servicio externo), mapa
-[ ] fase 4: SEO, accesibilidad, aviso legal  [ ] fase 5 (lo último): imágenes, logo, favicon
-[ ] SEO  [ ] optimización  [ ] dominio/hosting
+[x] fase 2: estructura de contenido (misión, cómo apadrinar, FAQ) con textos provisionales
+[x] fase 3 (preparada): formulario con RGPD/antispam; falta conectar Formspree (action) y pegar el mapa
+[x] fase 4: SEO (og, sitemap, robots), accesibilidad, aviso-legal.html, privacidad.html, 404.html (borradores a revisar por gestor)
+[ ] fase 5 (lo último): imágenes, logo, favicon, og:image, fondo-campo.jpg
+[ ] pendiente del cliente: textos reales, datos de contacto, dominio (sustituir TU-DOMINIO.com en sitemap/robots), hosting
 Idioma: español (posible mallorquín/catalán más adelante).

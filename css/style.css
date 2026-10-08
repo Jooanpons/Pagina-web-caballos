@@ -602,3 +602,173 @@ header {
         text-align: center;
     }
 }
+
+/* =====================================================
+   13. ACCESIBILIDAD
+   ===================================================== */
+/* Enlace "Saltar al contenido": solo aparece al navegar con teclado (Tab) */
+.saltar {
+    position: absolute;
+    left: 12px;
+    top: -60px;
+    z-index: 1000;
+    padding: 10px 16px;
+    background: var(--verde-oscuro);
+    color: #fff;
+    border-radius: 6px;
+    transition: top 0.2s ease;
+}
+
+.saltar:focus {
+    top: 10px;
+}
+
+/* Contorno visible al navegar con teclado */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid var(--dorado);
+    outline-offset: 2px;
+}
+
+/* Respeta a quien tiene desactivadas las animaciones en su sistema */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        animation: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =====================================================
+   14. PASOS · FAQ · LEGAL · EXTRAS DEL FORMULARIO
+   ===================================================== */
+.centrado {
+    text-align: center;
+}
+
+/* Pasos numerados (cómo apadrinar) */
+.pasos {
+    list-style: none;
+    counter-reset: paso;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 30px;
+}
+
+.pasos li {
+    counter-increment: paso;
+    position: relative;
+    padding: 56px 20px 22px;
+    background: #fff;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+    text-align: center;
+}
+
+.pasos li::before {
+    content: counter(paso);
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 34px;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 50%;
+    background: var(--dorado);
+    color: #2d2d2d;
+    font-weight: 700;
+}
+
+.pasos h3 {
+    color: var(--verde-oscuro);
+    margin-bottom: 8px;
+}
+
+.pasos p {
+    line-height: 1.55;
+}
+
+/* Preguntas frecuentes (<details>): despliegue nativo, sin JavaScript */
+.faq {
+    text-align: left;
+}
+
+.faq details {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+    margin-bottom: 12px;
+    padding: 14px 18px;
+}
+
+.faq summary {
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--verde-oscuro);
+}
+
+.faq details p {
+    margin: 10px 0 0;
+}
+
+/* Textos legales */
+.legal {
+    text-align: left;
+}
+
+.legal h2 {
+    color: var(--verde-oscuro);
+    font-size: 1.3rem;
+    margin: 28px 0 8px;
+}
+
+.legal ul {
+    margin-left: 20px;
+    line-height: 1.8;
+}
+
+.legal p {
+    text-align: left;
+}
+
+/* Formulario: casilla de consentimiento, trampa antispam y aviso */
+.contacto-form .consentimiento {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.contacto-form .consentimiento input {
+    margin-top: 4px;
+}
+
+.honeypot {
+    position: absolute;
+    left: -9999px;
+}
+
+.form-aviso {
+    margin-top: 10px;
+    color: var(--tierra);
+    line-height: 1.5;
+}
+
+.footer-legal {
+    display: block;
+    margin-top: 6px;
+}
+
+@media (max-width: 900px) {
+    .pasos {
+        grid-template-columns: 1fr;
+    }
+}

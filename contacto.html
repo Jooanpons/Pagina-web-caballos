@@ -7,6 +7,15 @@
     <title>Ubicación y contacto · Espíritu Equino</title>
     <!-- EXPLICA ESTO: frase que Google muestra bajo el título (~150 caracteres). Que describa la página. -->
     <meta name="description" content="Dónde encontrarnos en Mallorca y cómo contactar con Espíritu Equino.">
+    <meta name="theme-color" content="#2f4a2f">
+    <!-- EXPLICA ESTO: datos para cuando alguien comparte la web en WhatsApp/Instagram/Facebook. -->
+    <meta property="og:site_name" content="Espíritu Equino">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:title" content="Ubicación y contacto · Espíritu Equino">
+    <meta property="og:description" content="Dónde encontrarnos en Mallorca y cómo contactar con Espíritu Equino.">
+    <!-- EXPLICA ESTO (fase de imágenes): añadir aquí <meta property="og:image" content="https://TU-DOMINIO/imagenes/portada.jpg">
+         y <link rel="icon" href="imagenes/favicon.png"> cuando existan el logo y la foto de portada. -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,6 +23,7 @@
 
     <!-- NAVBAR: es IDÉNTICO en todas las páginas. Si cambias un enlace aquí, cámbialo en los 6 HTML.
          aria-current="page" marca en negrita la página donde estás. -->
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
     <header>
         <nav class="navbar" aria-label="Navegación principal">
             <!-- EXPLICA ESTO: botón de menú que solo se ve en móvil. Lo controla js/main.js; no hace falta tocarlo. -->
@@ -37,7 +47,7 @@
         </nav>
     </header>
 
-    <main>
+    <main id="contenido">
         <section class="mini-hero fondo-campo">
             <div class="hero-text">
                 <!-- EXPLICA ESTO: título de la página y una frase corta debajo -->
@@ -67,8 +77,10 @@
             <div class="contacto-form">
                 <h2>Escríbenos</h2>
                 <!-- EXPLICA ESTO: este formulario aún NO envía nada (hace falta un servicio como Formspree o un servidor).
-                     Cuando tengamos el email del cliente, se pone la URL del servicio en action="". -->
-                <form action="#" method="post">
+                     Pasos: 1) crear cuenta gratis en formspree.io con el email del cliente, 2) crear un formulario,
+                     3) copiar su URL (https://formspree.io/f/xxxx) y ponerla en action="" en lugar de "#".
+                     Mientras action sea "#", la web avisa de que aún no está conectado (js/main.js). -->
+                <form action="#" method="post" data-formulario>
                     <label for="nombre">Nombre</label>
                     <input type="text" id="nombre" name="nombre" required>
 
@@ -78,7 +90,17 @@
                     <label for="mensaje">Mensaje</label>
                     <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
+                    <!-- Campo trampa contra spam: oculto para personas; Formspree lo reconoce como _gotcha -->
+                    <input type="text" name="_gotcha" class="honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+                    <!-- EXPLICA ESTO: casilla obligatoria por RGPD. Enlaza con privacidad.html (hay que completarla). -->
+                    <label class="consentimiento">
+                        <input type="checkbox" name="consentimiento" required>
+                        He leído y acepto la <a href="privacidad.html">política de privacidad</a>.
+                    </label>
+
                     <button class="boton" type="submit">Enviar</button>
+                    <p class="form-aviso" role="status" aria-live="polite"></p>
                 </form>
             </div>
 
@@ -114,7 +136,13 @@
                 <!-- EXPLICA ESTO: redes sociales cuando existan: <a href="URL" target="_blank" rel="noopener">Instagram</a> -->
             </div>
         </div>
-        <p class="footer-copy">&copy; Espíritu Equino. Todos los derechos reservados.</p>
+        <p class="footer-copy">
+            &copy; Espíritu Equino. Todos los derechos reservados.
+            <span class="footer-legal">
+                <a href="aviso-legal.html">Aviso legal</a> ·
+                <a href="privacidad.html">Privacidad y cookies</a>
+            </span>
+        </p>
     </footer>
 
     <!-- Menú móvil (común a todas las páginas) -->
